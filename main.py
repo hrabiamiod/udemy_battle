@@ -45,7 +45,7 @@ while running:
 
         player.reduce_mp(cost)
         enemy.take_damage(magic_dmg)
-        print(BColors.OKBLUE + "\n" + spell + " deals", str(magic_dmg), "points of damage" + BColors.ENDC)
+        print(BColors.OKBLUE + "\n" + spell.name + " deals", str(magic_dmg), "points of damage" + BColors.ENDC)
 
     enemy_choice = 1
 
