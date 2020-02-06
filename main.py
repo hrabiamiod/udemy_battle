@@ -13,7 +13,7 @@ cure = Spell("Cure", 12, 120, "white")
 cura = Spell("Cura", 18, 200, "white")
 
 player = Person(460, 65, 60, 34, [fire, thunder, blizzard, meteor, cure, cura])
-enemy = Person(1200, 65, 45, [])
+enemy = Person(1200, 65, 45, 35, [])
 
 running = True
 i = 0
