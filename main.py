@@ -35,7 +35,7 @@ while running:
         magic_choise = int(input("Choose magic:")) - 1
 
         spell = player.magic[magic_choise]
-        magic_dmg = spell.generate_damage()
+        magic_dmg = spell.generateDamage()
 
         current_mp = player.get_mp()
 
@@ -43,7 +43,7 @@ while running:
             print(BColors.FAIL + "\nNot enough MP\n" + BColors.ENDC)
             continue
 
-        player.reduce_mp(cost)
+        player.reduce_mp(spell.cost)
         enemy.take_damage(magic_dmg)
         print(BColors.OKBLUE + "\n" + spell.name + " deals", str(magic_dmg), "points of damage" + BColors.ENDC)
 
